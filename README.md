@@ -16,11 +16,11 @@ What interests me most is making deterministic detection, machine learning and L
 
 | Project | What it is |
 |---|---|
-| [VoiceFlow](https://github.com/contactmishra/VoiceFlow) | Free, private push-to-talk dictation for Apple Silicon Macs. Local Whisper on MLX, 8-bit model, nothing leaves the machine. |
-| [smart-water-bowl-iot](https://github.com/contactmishra/smart-water-bowl-iot) | ESP32 sensor node over MQTT, HTTP and CoAP into InfluxDB and Grafana, with 24-hour water-level forecasting. |
-| [satellite-segmentation-unet](https://github.com/contactmishra/satellite-segmentation-unet) | Multi-class land-cover segmentation of aerial images with a U-Net built from scratch in TensorFlow/Keras. |
-| [sentence-reconstruction-seq2seq](https://github.com/contactmishra/sentence-reconstruction-seq2seq) | Rebuilds a sentence from its shuffled words with an LSTM encoder-decoder and attention. |
-| [cmos-two-stage-opamp](https://github.com/contactmishra/cmos-two-stage-opamp) · [cmos-low-voltage-opamp](https://github.com/contactmishra/cmos-low-voltage-opamp) | Two CMOS op-amps sized by hand from a spec sheet and verified in LTspice. |
+| [VoiceFlow](https://github.com/theommishra-dev/VoiceFlow) | Free, private push-to-talk dictation for Apple Silicon Macs. Local Whisper on MLX, 8-bit model, nothing leaves the machine. |
+| [smart-water-bowl-iot](https://github.com/theommishra-dev/smart-water-bowl-iot) | ESP32 sensor node over MQTT, HTTP and CoAP into InfluxDB and Grafana, with 24-hour water-level forecasting. |
+| [satellite-segmentation-unet](https://github.com/theommishra-dev/satellite-segmentation-unet) | Multi-class land-cover segmentation of aerial images with a U-Net built from scratch in TensorFlow/Keras. |
+| [sentence-reconstruction-seq2seq](https://github.com/theommishra-dev/sentence-reconstruction-seq2seq) | Rebuilds a sentence from its shuffled words with an LSTM encoder-decoder and attention. |
+| [cmos-two-stage-opamp](https://github.com/theommishra-dev/cmos-two-stage-opamp) · [cmos-low-voltage-opamp](https://github.com/theommishra-dev/cmos-low-voltage-opamp) | Two CMOS op-amps sized by hand from a spec sheet and verified in LTspice. |
 
 ### Toolbox
 
