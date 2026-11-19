@@ -1,11 +1,13 @@
 <img src="./cards/hero.svg" width="100%" alt="Om Mishra. Cybersecurity engineer in Bologna, Italy. I make detection rules, machine learning and LLMs work together in the SOC." />
 
-<a href="https://www.linkedin.com/in/theommishra"><img src="./cards/tile-security.svg" width="32.5%" alt="Security: 40,000+ EV chargers watched by my detections. LinkedIn." /></a> <a href="https://www.youtube.com/@TheOmVlogsOfficial"><img src="./cards/tile-youtube.svg" width="32.5%" alt="YouTube: 5.5k subscribers to The Om Vlogs | In Italy." /></a> <a href="https://github.com/theommishra-dev/claude-skills"><img src="./cards/tile-skills.svg" width="32.5%" alt="Building with Claude: 5 Anthropic certifications, and my open Claude Code skills." /></a>
+<a href="https://www.linkedin.com/in/theommishra"><img src="./cards/tile-security.svg" width="32.5%" alt="Security: 40,000+ EV chargers watched by my detections. LinkedIn." /></a> <a href="https://www.youtube.com/@TheOmVlogsOfficial"><img src="./cards/tile-youtube.svg" width="32.5%" alt="YouTube: 5.5k subscribers to The Om Vlogs | In Italy." /></a> <a href="https://github.com/theommishra-dev/claude-skills"><img src="./cards/tile-skills.svg" width="32.5%" alt="Building with Claude: 9 Anthropic certifications, and my open Claude Code skills." /></a>
 
 <img src="./cards/activity.svg" width="100%" alt="My GitHub contributions per month over the last 12 months, with streak, active days and busiest day." />
 
 <a href="https://github.com/theommishra-dev/VoiceFlow"><img src="./cards/repo-voiceflow.svg" width="49%" alt="VoiceFlow: free, private push-to-talk dictation for Apple Silicon Macs. Local Whisper on MLX." /></a> <a href="https://github.com/theommishra-dev/claude-skills"><img src="./cards/repo-claude-skills.svg" width="49%" alt="claude-skills: Claude Code skills I build and use, starting with resume-optimizer." /></a>
 <a href="https://github.com/theommishra-dev/smart-water-bowl-iot"><img src="./cards/repo-smart-water-bowl-iot.svg" width="49%" alt="smart-water-bowl-iot: ESP32 sensor node over MQTT, HTTP and CoAP into InfluxDB and Grafana, with 24 hour forecasting." /></a> <a href="https://github.com/theommishra-dev/satellite-segmentation-unet"><img src="./cards/repo-satellite-segmentation-unet.svg" width="49%" alt="satellite-segmentation-unet: land cover segmentation of aerial images with a U-Net built from scratch." /></a>
+
+<a href="https://www.linkedin.com/in/theommishra/details/certifications/"><img src="./cards/certs.svg" width="100%" alt="Anthropic certifications (9): Claude Code in Action; Claude 101; Claude Code 101; AI Fluency: Framework & Foundations; AI Capabilities and Limitations; Introduction to Claude Cowork; Claude Platform 101; Introduction to Subagents; Introduction to Agent Skills." /></a>
 
 <img src="./cards/heatmap.svg" width="100%" alt="My GitHub contribution graph for the last year, in amber." />
 
@@ -34,7 +36,7 @@ I'm a **Cybersecurity Engineer at [Alpitronic](https://www.alpitronic.it)** in B
 
 - **MSc Electronic Engineering**, University of Bologna. Thesis: *Cybersecurity Monitoring and Threat Detection for Large-Scale EV Charging Infrastructure: Design and Implementation of a SIEM Platform Using the Elastic Stack.*
 - **BTech Electronics and Communication Engineering**, UIT RGPV, Bhopal.
-- **Anthropic certifications (2026)**: Claude Code in Action, Claude Platform 101, Subagents, Agent Skills, AI Fluency.
+- **Anthropic certifications (2026)**: [Claude Code in Action](https://verify.skilljar.com/c/qcb76aebe3n4), [Claude 101](https://verify.skilljar.com/c/gq8nxvta47en), [Claude Code 101](https://verify.skilljar.com/c/d2xdmk5hehe7), [AI Fluency: Framework & Foundations](https://verify.skilljar.com/c/pcv7zsipgffe), [AI Capabilities and Limitations](https://verify.skilljar.com/c/y8fut74f5g7q), [Introduction to Claude Cowork](https://verify.skilljar.com/c/5eevqa976h5o), [Claude Platform 101](https://verify.skilljar.com/c/67uq7ooiu5ux), [Introduction to Subagents](https://verify.skilljar.com/c/zzpbgmuqx4dc), [Introduction to Agent Skills](https://verify.skilljar.com/c/83rsrztip5d9).
 
 **More projects**
 

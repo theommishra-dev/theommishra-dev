@@ -34,7 +34,7 @@ TILES = [
     {"file": "youtube", "label": "YOUTUBE", "value": 5.5, "fmt": "{:.1f}", "suffix": "k",
      "caption": ["subscribers to The Om", "Vlogs | In Italy"], "cta": "Watch",
      "href": "https://www.youtube.com/@TheOmVlogsOfficial"},
-    {"file": "skills", "label": "BUILDING WITH CLAUDE", "value": 5, "fmt": "{:d}", "suffix": "",
+    {"file": "skills", "label": "BUILDING WITH CLAUDE", "value": None, "fmt": "{:d}", "suffix": "",
      "caption": ["Anthropic certifications;", "my open Claude skills"], "cta": "claude-skills",
      "href": "https://github.com/theommishra-dev/claude-skills"},
 ]
@@ -45,4 +45,19 @@ REPOS = [
     {"name": "claude-skills", "lines": ["Claude Code skills I build and use. First:", "resume-optimizer, which tailors a resume", "to any job description."]},
     {"name": "smart-water-bowl-iot", "lines": ["ESP32 sensor node over MQTT, HTTP and CoAP", "into InfluxDB and Grafana, with 24 hour", "water level forecasting."]},
     {"name": "satellite-segmentation-unet", "lines": ["Multi-class land cover segmentation of", "aerial images with a U-Net built from", "scratch in TensorFlow/Keras."]},
+]
+
+# Anthropic certifications, as listed on LinkedIn (read 2026-11-19). Oldest first.
+# Each verifies at https://verify.skilljar.com/c/<id>
+CERTS_HREF = "https://www.linkedin.com/in/theommishra/details/certifications/"
+CERTS = [
+    {"name": "Claude Code in Action", "track": "Claude Code", "date": "Apr 2026", "id": "qcb76aebe3n4"},
+    {"name": "Claude 101", "track": "AI Fundamentals", "date": "Apr 2026", "id": "gq8nxvta47en"},
+    {"name": "Claude Code 101", "track": "AI Coding & Development", "date": "May 2026", "id": "d2xdmk5hehe7"},
+    {"name": "AI Fluency: Framework & Foundations", "track": "AI Fluency", "date": "May 2026", "id": "pcv7zsipgffe"},
+    {"name": "AI Capabilities and Limitations", "track": "AI Fluency", "date": "May 2026", "id": "y8fut74f5g7q"},
+    {"name": "Introduction to Claude Cowork", "track": "AI Workflows", "date": "May 2026", "id": "5eevqa976h5o"},
+    {"name": "Claude Platform 101", "track": "AI Development", "date": "Aug 2026", "id": "67uq7ooiu5ux"},
+    {"name": "Introduction to Subagents", "track": "Claude Code", "date": "Aug 2026", "id": "zzpbgmuqx4dc"},
+    {"name": "Introduction to Agent Skills", "track": "Claude Code", "date": "Aug 2026", "id": "83rsrztip5d9"},
 ]

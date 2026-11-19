@@ -33,7 +33,7 @@ EASE = "cubic-bezier(.23,1,.32,1)"          # strong ease-out
 SPRING = "cubic-bezier(.34,1.56,.64,1)"     # small overshoot
 
 # Page-level stagger: each card starts later so the README plays top to bottom.
-START = {"hero": 0.0, "tiles": 0.7, "activity": 1.1, "repos": 1.6, "heatmap": 2.1}
+START = {"hero": 0.0, "tiles": 0.7, "activity": 1.1, "repos": 1.6, "certs": 2.0, "heatmap": 2.4}
 
 
 # ---------- helpers ----------
@@ -221,6 +221,8 @@ def tile(i, t):
            f".ring{{transform-box:fill-box;transform-origin:center;animation:ring 4.5s ease-out infinite}}"
            f".sweep{{animation:sweep 6s {EASE} infinite}}.nudge{{animation:nudge 3s ease-in-out infinite}}")
     v, fmt, suf = t["value"], t["fmt"], t["suffix"]
+    if v is None:  # the Claude tile counts the certifications in config.CERTS
+        v = len(C.CERTS)
     final = fmt.format(v) + suf
     big = []
     # count-up: 18 SMIL <set> frames (CSS cannot change text)
@@ -395,6 +397,38 @@ def repo_card(i, r, meta):
     write(f'repo-{r["name"].lower()}', svg(W, H, label, "".join(body), ["serif-400", "mono-400"], css))
 
 
+def certs():
+    W = 880
+    cols, gap, row_h = 3, 10, 62
+    col_w = (W - 80 - gap * (cols - 1)) / cols
+    rows = -(-len(C.CERTS) // cols)
+    H = 112 + rows * row_h + 18
+    t0 = START["certs"]
+    css = (f".rise{{animation:rise .8s {EASE} both}}"
+           f".pop{{transform-box:fill-box;transform-origin:center;animation:pop .45s {EASE} both}}")
+    first, last = C.CERTS[0]["date"], C.CERTS[-1]["date"]
+    body = [f'<g{anim("rise", t0)}>{text(40, 64, "Anthropic certifications", 34, COL["ink"], SERIF)}'
+            f'{text(40, 88, f"{len(C.CERTS)} courses, {first} to {last}", 12, COL["muted"])}</g>',
+            f'<g{anim("rise", t0 + .05)}>{text(W - 40, 60, "LinkedIn ↗", 12.5, COL["muted"], extra=" text-anchor=\"end\"")}</g>']
+    for i, c in enumerate(C.CERTS):
+        col, row = i % cols, i // cols
+        x, y = 40 + col * (col_w + gap), 128 + row * row_h
+        name, size = c["name"], 12.5
+        while width(name, "mono-600", size) > col_w - 38 and size > 10:
+            size -= .5
+        d = t0 + .2 + i * .07
+        body.append(f'<g{anim("rise", d)}>'
+                    f'<rect x="{x:.1f}" y="{y - 16}" width="{col_w:.1f}" height="{row_h - 10}" rx="10" fill="{COL["panel"]}" stroke="{COL["line"]}"/>'
+                    f'{text(x + 26, y + 3, name, size, COL["ink"], weight=600)}'
+                    f'{text(x + 26, y + 23, f"{c['track']}  ·  {c['date']}", 11, COL["muted"])}</g>')
+        # amber check, popping in after its row
+        body.append(f'<g{anim("pop", d + .35)}><circle cx="{x + 13}" cy="{y - 1}" r="6" fill="{COL["accent"]}"/>'
+                    f'<path d="M{x + 10},{y - 1} l2,2.2 l4,-4.4" fill="none" stroke="{COL["bg"]}" stroke-width="1.6" '
+                    f'stroke-linecap="round" stroke-linejoin="round"/></g>')
+    label = f"Anthropic certifications ({len(C.CERTS)}): " + "; ".join(f'{c["name"]}, {c["date"]}' for c in C.CERTS) + "."
+    write("certs", svg(W, H, label, "".join(body), ["serif-400", "mono-400", "mono-600"], css))
+
+
 def main():
     d, days = load()
     s = stats(days)
@@ -404,6 +438,7 @@ def main():
     activity(s)
     for i, r in enumerate(C.REPOS):
         repo_card(i, r, d["repos"].get(r["name"], {}))
+    certs()
     heatmap(days, s)
     print("STATIC (final frame)" if STATIC else "animated")
 

@@ -15,6 +15,7 @@ const html = `
 <p><img src="cards/activity.svg" width="100%"></p>
 <p><img src="cards/repo-voiceflow.svg" width="49%"> <img src="cards/repo-claude-skills.svg" width="49%"></p>
 <p><img src="cards/repo-smart-water-bowl-iot.svg" width="49%"> <img src="cards/repo-satellite-segmentation-unet.svg" width="49%"></p>
+<p><img src="cards/certs.svg" width="100%"></p>
 <p><img src="cards/heatmap.svg" width="100%"></p>`;
 const v = "?v=" + Date.now(); const dir = location.search.includes("static") ? "cards/static/" : "cards/";
 const h = html.replace(/\.svg"/g, ".svg" + v + "\"").replaceAll("cards/", dir); r.innerHTML = h; r2.innerHTML = h;
