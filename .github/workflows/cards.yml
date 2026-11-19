@@ -1,0 +1,47 @@
+name: Refresh profile cards
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # daily, 03:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/**", "data/portrait.txt", "fonts/*.woff", "fonts/metrics.json"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cards
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Refresh contribution data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/fetch_contributions.py
+
+      - name: Render README cards (hero, tiles, activity, repos, contribution graph)
+        run: python scripts/render_readme_cards.py
+
+      - name: Commit data and cards
+        run: |
+          git add data/contributions.json cards
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          # bot identity on purpose: these commits must not count as Om's own contributions
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "Refresh profile cards"
+          git push

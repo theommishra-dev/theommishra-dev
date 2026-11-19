@@ -1,0 +1,21 @@
+<!doctype html><meta charset="utf-8"><title>Cards preview</title>
+<style>
+body{margin:0;display:flex;gap:24px;padding:24px;background:#888;font:14px system-ui}
+.col{width:880px;padding:24px;border-radius:8px}
+.dark{background:#0d1117}.light{background:#fff}
+p{margin:0 0 8px}
+</style>
+<!-- preview.html?static shows the STATIC=1 frames from cards/static/. Mirrors the README layout, cards loaded through <img> like GitHub does. -->
+<div class="col dark"><div id="r"></div></div>
+<div class="col light"><div id="r2"></div></div>
+<script>
+const html = `
+<p><img src="cards/hero.svg" width="100%"></p>
+<p><img src="cards/tile-security.svg" width="32.5%"> <img src="cards/tile-youtube.svg" width="32.5%"> <img src="cards/tile-skills.svg" width="32.5%"></p>
+<p><img src="cards/activity.svg" width="100%"></p>
+<p><img src="cards/repo-voiceflow.svg" width="49%"> <img src="cards/repo-claude-skills.svg" width="49%"></p>
+<p><img src="cards/repo-smart-water-bowl-iot.svg" width="49%"> <img src="cards/repo-satellite-segmentation-unet.svg" width="49%"></p>
+<p><img src="cards/heatmap.svg" width="100%"></p>`;
+const v = "?v=" + Date.now(); const dir = location.search.includes("static") ? "cards/static/" : "cards/";
+const h = html.replace(/\.svg"/g, ".svg" + v + "\"").replaceAll("cards/", dir); r.innerHTML = h; r2.innerHTML = h;
+</script>
