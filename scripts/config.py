@@ -28,8 +28,9 @@ HERO = {
 }
 
 TILES = [
-    {"file": "security", "label": "SECURITY", "value": 40000, "fmt": "{:,}", "suffix": "+",
-     "caption": ["EV chargers watched by", "my detections"], "cta": "LinkedIn",
+    # a string value shows as a word (no count-up); kept general, no employer facts (Om, 2026-11-19)
+    {"file": "security", "label": "SECURITY", "value": "SOC + AI", "fmt": "", "suffix": "",
+     "caption": ["detection engineering and", "LLM-assisted triage"], "cta": "LinkedIn",
      "href": "https://www.linkedin.com/in/theommishra"},
     {"file": "youtube", "label": "YOUTUBE", "value": 5.5, "fmt": "{:.1f}", "suffix": "k",
      "caption": ["subscribers to The Om", "Vlogs | In Italy"], "cta": "Watch",

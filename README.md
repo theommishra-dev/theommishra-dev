@@ -1,6 +1,6 @@
 <img src="./cards/hero.svg" width="100%" alt="Om Mishra. Cybersecurity engineer in Bologna, Italy. I make detection rules, machine learning and LLMs work together in the SOC." />
 
-<a href="https://www.linkedin.com/in/theommishra"><img src="./cards/tile-security.svg" width="32.5%" alt="Security: 40,000+ EV chargers watched by my detections. LinkedIn." /></a> <a href="https://www.youtube.com/@TheOmVlogsOfficial"><img src="./cards/tile-youtube.svg" width="32.5%" alt="YouTube: 5.5k subscribers to The Om Vlogs | In Italy." /></a> <a href="https://github.com/theommishra-dev/claude-skills"><img src="./cards/tile-skills.svg" width="32.5%" alt="Building with Claude: 9 Anthropic certifications, and my open Claude Code skills." /></a>
+<a href="https://www.linkedin.com/in/theommishra"><img src="./cards/tile-security.svg" width="32.5%" alt="Security: SOC + AI. Detection engineering and LLM-assisted triage. LinkedIn." /></a> <a href="https://www.youtube.com/@TheOmVlogsOfficial"><img src="./cards/tile-youtube.svg" width="32.5%" alt="YouTube: 5.5k subscribers to The Om Vlogs | In Italy." /></a> <a href="https://github.com/theommishra-dev/claude-skills"><img src="./cards/tile-skills.svg" width="32.5%" alt="Building with Claude: 9 Anthropic certifications, and my open Claude Code skills." /></a>
 
 <img src="./cards/activity.svg" width="100%" alt="My GitHub contributions per month over the last 12 months, with streak, active days and busiest day." />
 

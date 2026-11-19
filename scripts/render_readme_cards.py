@@ -219,16 +219,20 @@ def tile(i, t):
     t0 = START["tiles"] + i * .15
     css = (f".swing{{transform-origin:50% 100%;animation:swing .9s {SPRING} both}}"
            f".ring{{transform-box:fill-box;transform-origin:center;animation:ring 4.5s ease-out infinite}}"
-           f".sweep{{animation:sweep 6s {EASE} infinite}}.nudge{{animation:nudge 3s ease-in-out infinite}}")
+           f".sweep{{animation:sweep 6s {EASE} infinite}}.nudge{{animation:nudge 3s ease-in-out infinite}}"
+           f".rise{{animation:rise .8s {EASE} both}}")
     v, fmt, suf = t["value"], t["fmt"], t["suffix"]
     if v is None:  # the Claude tile counts the certifications in config.CERTS
         v = len(C.CERTS)
-    final = fmt.format(v) + suf
+    word = isinstance(v, str)  # a word instead of a number: no count-up, it just rises in
+    final = v if word else fmt.format(v) + suf
     big = []
     # count-up: 18 SMIL <set> frames (CSS cannot change text)
     frames = 18
     begin = t0 + .45
-    if not STATIC:
+    if word:
+        big.append(f'<g{anim("rise", begin)}>{text(20, 122, final, 64, COL["ink"], SERIF)}</g>')
+    elif not STATIC:
         sets = []
         for k in range(1, frames + 1):
             p = 1 - (1 - k / frames) ** 3
@@ -242,7 +246,8 @@ def tile(i, t):
             sets.append(f'<g visibility="hidden"><set attributeName="visibility" to="visible" begin="{b:.2f}s"{end}{fill}/>'
                         f'{text(20, 122, s, 64, COL["ink"], SERIF)}</g>')
         big.append(f'<g class="smil">{"".join(sets)}</g>')
-    big.append(f'<g class="smil-final">{text(20, 122, final, 64, COL["ink"], SERIF)}</g>')
+    if not word:
+        big.append(f'<g class="smil-final">{text(20, 122, final, 64, COL["ink"], SERIF)}</g>')
     body = [
         f'<defs><clipPath id="c{i}"><rect width="{W}" height="{H}" rx="16"/></clipPath>'
         f'<linearGradient id="g{i}" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/>'
