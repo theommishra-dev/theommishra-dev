@@ -36,14 +36,14 @@ TILES = [
      "caption": ["subscribers to The Om", "Vlogs | In Italy"], "cta": "Watch",
      "href": "https://www.youtube.com/@TheOmVlogsOfficial"},
     {"file": "skills", "label": "BUILDING WITH CLAUDE", "value": None, "fmt": "{:d}", "suffix": "",
-     "caption": ["Anthropic certifications;", "my open Claude skills"], "cta": "claude-skills",
-     "href": "https://github.com/theommishra-dev/claude-skills"},
+     "caption": ["Anthropic certifications", "in Claude and agentic AI"], "cta": "Certificates",
+     "href": "https://www.linkedin.com/in/theommishra/details/certifications/"},
 ]
 
-# Featured repos: text is written here (fits the card), stars and language come from the API.
+# Featured repos (public only; claude-skills made private and removed 2026-11-19, Om): text is written here (fits the card), stars and language come from the API.
 REPOS = [
     {"name": "VoiceFlow", "lines": ["Free, private push-to-talk dictation for", "Apple Silicon Macs. Local Whisper on MLX,", "nothing leaves the machine."]},
-    {"name": "claude-skills", "lines": ["Claude Code skills I build and use. First:", "resume-optimizer, which tailors a resume", "to any job description."]},
+    {"name": "sentence-reconstruction-seq2seq", "lines": ["Rebuilds a sentence from its shuffled", "words with an LSTM encoder-decoder and", "attention, trained on GenericsKB."]},
     {"name": "smart-water-bowl-iot", "lines": ["ESP32 sensor node over MQTT, HTTP and CoAP", "into InfluxDB and Grafana, with 24 hour", "water level forecasting."]},
     {"name": "satellite-segmentation-unet", "lines": ["Multi-class land cover segmentation of", "aerial images with a U-Net built from", "scratch in TensorFlow/Keras."]},
 ]

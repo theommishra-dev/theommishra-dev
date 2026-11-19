@@ -1480,6 +1480,13 @@
   }
  ],
  "repos": {
+  "sentence-reconstruction-seq2seq": {
+   "stars": 0,
+   "forks": 0,
+   "pushed": "2026-11-14T22:22:45Z",
+   "language": "Jupyter Notebook",
+   "language_color": "#DA5B0B"
+  },
   "smart-water-bowl-iot": {
    "stars": 0,
    "forks": 0,
@@ -1498,13 +1505,6 @@
    "stars": 0,
    "forks": 0,
    "pushed": "2026-11-14T22:20:51Z",
-   "language": "Python",
-   "language_color": "#3572A5"
-  },
-  "claude-skills": {
-   "stars": 0,
-   "forks": 0,
-   "pushed": "2026-11-15T22:51:31Z",
    "language": "Python",
    "language_color": "#3572A5"
   }

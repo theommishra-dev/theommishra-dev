@@ -1,10 +1,10 @@
 <img src="./cards/hero.svg" width="100%" alt="Om Mishra. Cybersecurity engineer in Bologna, Italy. I make detection rules, machine learning and LLMs work together in the SOC." />
 
-<a href="https://www.linkedin.com/in/theommishra"><img src="./cards/tile-security.svg" width="32.5%" alt="Security: SOC + AI. Detection engineering and LLM-assisted triage. LinkedIn." /></a> <a href="https://www.youtube.com/@TheOmVlogsOfficial"><img src="./cards/tile-youtube.svg" width="32.5%" alt="YouTube: 5.5k subscribers to The Om Vlogs | In Italy." /></a> <a href="https://github.com/theommishra-dev/claude-skills"><img src="./cards/tile-skills.svg" width="32.5%" alt="Building with Claude: 9 Anthropic certifications, and my open Claude Code skills." /></a>
+<a href="https://www.linkedin.com/in/theommishra"><img src="./cards/tile-security.svg" width="32.5%" alt="Security: SOC + AI. Detection engineering and LLM-assisted triage. LinkedIn." /></a> <a href="https://www.youtube.com/@TheOmVlogsOfficial"><img src="./cards/tile-youtube.svg" width="32.5%" alt="YouTube: 5.5k subscribers to The Om Vlogs | In Italy." /></a> <a href="https://www.linkedin.com/in/theommishra/details/certifications/"><img src="./cards/tile-skills.svg" width="32.5%" alt="Building with Claude: 9 Anthropic certifications in Claude and agentic AI." /></a>
 
 <img src="./cards/activity.svg" width="100%" alt="My GitHub contributions per month over the last 12 months, with streak, active days and busiest day." />
 
-<a href="https://github.com/theommishra-dev/VoiceFlow"><img src="./cards/repo-voiceflow.svg" width="49%" alt="VoiceFlow: free, private push-to-talk dictation for Apple Silicon Macs. Local Whisper on MLX." /></a> <a href="https://github.com/theommishra-dev/claude-skills"><img src="./cards/repo-claude-skills.svg" width="49%" alt="claude-skills: Claude Code skills I build and use, starting with resume-optimizer." /></a>
+<a href="https://github.com/theommishra-dev/VoiceFlow"><img src="./cards/repo-voiceflow.svg" width="49%" alt="VoiceFlow: free, private push-to-talk dictation for Apple Silicon Macs. Local Whisper on MLX." /></a> <a href="https://github.com/theommishra-dev/sentence-reconstruction-seq2seq"><img src="./cards/repo-sentence-reconstruction-seq2seq.svg" width="49%" alt="sentence-reconstruction-seq2seq: rebuilds a sentence from its shuffled words with an LSTM encoder-decoder and attention." /></a>
 <a href="https://github.com/theommishra-dev/smart-water-bowl-iot"><img src="./cards/repo-smart-water-bowl-iot.svg" width="49%" alt="smart-water-bowl-iot: ESP32 sensor node over MQTT, HTTP and CoAP into InfluxDB and Grafana, with 24 hour forecasting." /></a> <a href="https://github.com/theommishra-dev/satellite-segmentation-unet"><img src="./cards/repo-satellite-segmentation-unet.svg" width="49%" alt="satellite-segmentation-unet: land cover segmentation of aerial images with a U-Net built from scratch." /></a>
 
 <a href="https://www.linkedin.com/in/theommishra/details/certifications/"><img src="./cards/certs.svg" width="100%" alt="Anthropic certifications (9): Claude Code in Action; Claude 101; Claude Code 101; AI Fluency: Framework & Foundations; AI Capabilities and Limitations; Introduction to Claude Cowork; Claude Platform 101; Introduction to Subagents; Introduction to Agent Skills." /></a>
@@ -40,7 +40,6 @@ I'm a **Cybersecurity Engineer at [Alpitronic](https://www.alpitronic.it)** in B
 
 **More projects**
 
-- [sentence-reconstruction-seq2seq](https://github.com/theommishra-dev/sentence-reconstruction-seq2seq): rebuilds a sentence from its shuffled words with an LSTM encoder-decoder and attention.
 - [cmos-two-stage-opamp](https://github.com/theommishra-dev/cmos-two-stage-opamp) · [cmos-low-voltage-opamp](https://github.com/theommishra-dev/cmos-low-voltage-opamp): two CMOS op-amps sized by hand from a spec sheet and verified in LTspice.
 
 </details>
